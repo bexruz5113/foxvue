@@ -35,13 +35,13 @@ export default {
 
 <style lang="scss">
 .container {
-  max-width: 87%;
+  max-width: 100%;
   padding: 50px;
   margin: 0 auto;
 }
 .boxs {
   width: 100%;
-  padding: 10px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,40 +106,16 @@ transform: scale(1.05);
     display: block;
   }
   .box {
-    width: 50%;
+    width: 90%;
     margin: 50px auto;
-    position: relative;
+   
 
     .spanAbsolute{
-    position: absolute;
+        margin: 0 auto;
 
+  
   }
   }
 }
-@media screen and (max-width: 576px){
- .box {
-    width: 75%;
-    margin: 50px auto;
-    position: relative;
 
-    .spanAbsolute{
-    position: absolute;
-    top: 20px;
-    left: 33%;
-  }
-  }
-}
-@media screen and (max-width: 360px){
- .box {
-    width: 80%;
-    margin: 50px auto;
-    position: relative;
-
-    .spanAbsolute{
-    position: absolute;
-    top: 20px;
-    left: 30%;
-  }
-  }
-}
 </style>

@@ -11,8 +11,8 @@
               minima non aspernatur laudantium iste.
             </p>
 </b-col>
-<b-col cols="12" md="3" class="windows p-3">
-<div class="bg-white bg-white  border p-2">
+<b-col cols="12" md="3" class="windows my-2">
+<div class="bg-white bg-white  border w-100 p-2">
 <div class="d-flex justify-content-center align-items-center"><div class="winCircle1 my-3"></div></div>
 <div><h4 class="textPrimary">Nappi</h4></div>
 <div><h6 class="pb-3">Frontend developer</h6></div>
@@ -25,8 +25,8 @@
 </div>
 </div>
 </b-col>
-<b-col cols="12" md="3" class="windows p-3">
-<div class="bg-white bg-white  border p-2">
+<b-col cols="12" md="3" class="windows my-2">
+<div class="bg-white bg-white  border w-100 p-2">
 <div class="d-flex justify-content-center align-items-center"><div class="winCircle2 my-3"></div></div>
 <div><h4 class="textPrimary">Baxronov Bexruz</h4></div>
 <div><h6 class="pb-3">Frontend developer</h6></div>
@@ -38,9 +38,10 @@
 <div><img src="../assets/linkedin.png" width="20" alt=""></div>
 </div></div>
 </b-col>
-<b-col cols="12" md="3" class="windows p-3">
-<div class="bg-white bg-white  border p-2">
-<div class="d-flex justify-content-center align-items-center"><div class="winCircle3 my-3"></div></div>
+<b-col cols="12" md="3" class="windows my-2">
+<div class="bg-white bg-white  border w-100 p-2">
+<div class="d-flex justify-content-center align-items-center">
+<div class="winCircle3 my-3"></div></div>
 <div><h4 class="textPrimary">Miss Aziza</h4></div>
 <div><h6 class="pb-3">Frontend developer</h6></div>
 <div><p class="w-75 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi fugit minima quis!</p></div>
@@ -52,8 +53,8 @@
 </div>
 </div>
 </b-col>
-<b-col cols="12" md="3" class="windows p-3">
-<div class="bg-white bg-white  border p-2">
+<b-col cols="12" md="3" class="windows my-2">
+<div class="bg-white bg-white  border  w-100 p-2">
 <div class="d-flex justify-content-center align-items-center"><div class="winCircle4 my-3"></div></div>
 <div><h4 class="textPrimary">Mr Ruslan</h4></div>
 <div><h6 class="pb-3">Frontend developer</h6></div>
@@ -86,7 +87,7 @@ margin: 0;
 box-sizing: border-box;
 }
 .bgImage{
-padding: 50px;
+padding: 50px 0;
 background-image: url("../assets/gray-bg.jpg");
 background-attachment: fixed;
 }
@@ -96,7 +97,8 @@ color: black;}
 p{color:black;}
 
 .winCircle1{
-width: 100px;
+width:100%;
+max-width: 100px;
 height:100px;
 border-radius: 100%;
 background-image: url('../assets/team-1.jpg');
@@ -111,6 +113,7 @@ padding: 10px;
 animation: slide 1s forwards;
 }
 .windows{
+  width: 100%;
 transition: all 2s ease;
 animation: slide 1s forwards;
 }
@@ -130,7 +133,8 @@ to{transform: translateY(0)}
 }
 
 .winCircle2{
-width: 100px;
+width:100%;
+max-width: 100px;
 height:100px;
 border-radius: 100%;
 background-image: url('../assets/team-2.jpg');
@@ -138,7 +142,8 @@ background-size: cover;
 background-position: center center;
 }
 .winCircle3{
-width: 100px;
+width:100%;
+max-width: 100px;
 height:100px;
 border-radius: 100%;
 background-image: url('../assets/team-3.jpg');
@@ -146,11 +151,13 @@ background-size: cover;
 background-position: center center;
 }
 .winCircle4{
-width: 100px;
+width:100%;
+max-width: 100px;
 height:100px;
 border-radius: 100%;
 background-image: url('../assets/team-4.jpg');
 background-size: cover;
 background-position: center center;
 }
+
 </style>

@@ -89,7 +89,6 @@ body {
   .strong{
     font-size: 28px;
   }
- 
 }
 
 

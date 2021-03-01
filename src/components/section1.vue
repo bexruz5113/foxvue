@@ -55,7 +55,7 @@ export default {
   position: relative;
 
 h2{
-margin-top: 120px;
+margin-top: 20px;
 }
 
     p{
@@ -87,12 +87,10 @@ transform: scale(1.05);
 .spanAbsolute {
   width: 100px;
   height: 100px;
+  margin: 0 auto;
   border: 4px solid white;
   border-radius: 100%;
   background-color: #fff;
-  position: absolute;
-  left: 38%;
-  top:20px;
   display: flex;
   justify-content: center;
   align-items: center;

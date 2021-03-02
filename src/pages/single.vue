@@ -1,11 +1,13 @@
 <template>
   <div>
-    <b-container fluid class="bg-color">
+  <b-container fluid class="bg-color">
+    <b-container>
       <b-row>
-        <b-col cols="12" class="d-flex justify-content-center">
-          <h1 class="titleNews">News</h1>
+        <b-col cols="12">
+         <div class="d-flex justify-content-center"> <h1 class="titleNews">News</h1></div>
         </b-col>
       </b-row>
+    </b-container>
     </b-container>
     <b-container>
       <b-row>
@@ -171,7 +173,7 @@
                     <b-col cols="12" md="6"
                       ><div class="borderBottom">
                         <input
-                          type="text"
+                          type="email"
                           v-model="obj.email"
                           required
                           placeholder="Enter Your Email"
@@ -257,9 +259,9 @@ body {
   
 }
 .bg-color {
-  background-color: #21bbd3;
   width: 100%;
-  padding: 200px 0;
+  background-color: #21bbd3;
+  padding: 150px 0;
 }
 .titleNews {
   color: white !important;

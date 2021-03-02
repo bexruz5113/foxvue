@@ -49,21 +49,21 @@ p {
 }
 .positionRelative {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   transform: rotate(-90deg);
   position: relative;
 }
 .positionAbsolute {
   position: absolute;
-  top: 38%;
-  left: 44%;
+  top: 42%;
+  left: 45%;
 }
 
 .play {
   width: 70px;
   height: 70px;
   position: absolute;
-  top: 23px;
+  top: 26px;
   left: 28px;
   animation: scale 4s infinite;
 }
@@ -100,6 +100,33 @@ p {
     top: 38%;
     left: 42%;
   }
+  .play {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  animation: scale 4s infinite;
+}
+}
+@media screen and (max-width: 768px) {
+  .positionRelative {
+    transform: rotate(0deg);
+    position: relative;
+  }
+  .positionAbsolute {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  .play {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 25px;
+    left: 24px;
+    animation: scale 4s infinite;
+  }
 }
 @media screen and (max-width: 576px) {
   .positionRelative {
@@ -120,4 +147,43 @@ p {
     animation: scale 4s infinite;
   }
 }
+@media screen and (max-width: 400px) {
+  .positionRelative {
+    transform: rotate(0deg);
+    position: relative;
+  }
+  .positionAbsolute {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+    .play {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    animation: scale 4s infinite;
+  }
+}
+@media screen and (max-width: 321px) {
+  .positionRelative {
+    transform: rotate(0deg);
+    position: relative;
+  }
+  .positionAbsolute {
+    position: absolute;
+    top: 36%;
+    left: 33%;
+  }
+    .play {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    animation: scale 4s infinite;
+  }
+}
+
 </style>

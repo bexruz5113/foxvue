@@ -14,7 +14,7 @@
 <b-col cols="12" md="3" class="windows my-2">
 <div class="bg-white bg-white  border w-100 p-2">
 <div class="d-flex justify-content-center align-items-center"><div class="winCircle1 my-3"></div></div>
-<div><h4 class="textPrimary">Nappi</h4></div>
+<div><h4 class="textPrimary">Miss Ledy</h4></div>
 <div><h6 class="pb-3">Frontend developer</h6></div>
 <div><p class="w-75 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi fugit minima quis!</p></div>
 <div class="iconHover">

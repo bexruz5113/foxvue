@@ -73,6 +73,7 @@ a{
 .bgImage{
     background-image: url('../assets/footer-bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 input{

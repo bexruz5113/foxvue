@@ -7,6 +7,7 @@ import NewOne from "../pages/NewOne.vue";
 import NewTwo from "../pages/NewTwo.vue";
 import ApiExp from "../pages/api.vue"
 import Single from "../pages/single.vue"
+import Task from "../pages/task.vue"
 
 Vue.use(VueRouter);
 
@@ -52,7 +53,11 @@ const routes = [
     name: "Single",
     component: Single
   },
-
+{
+  path:"/task",
+  name:"Task",
+  component:Task
+}
 ];
 
 const router = new VueRouter({

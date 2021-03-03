@@ -21,20 +21,22 @@
         <b-col
           cols="12"
           lg="6"
-          v-for="person in $store.getters.people"
-          :key="person.id"
+          v-for="student in $store.getters.student"
+          :key="student.id"
         >
           <div class="p-3 my-2 border">
-            <h2 class="bg-dark text-white">Name: {{ person.name }}</h2>
-            <h4 class="text-left"><img src="../assets/paint-board-and-brush.png"> Skin color:{{ person.skin_color }}</h4>
-            <p class="text-left"><img src="../assets/add-documents.png" alt=""> Created: {{ person.created }}</p>
-            <a
+            <h2 class="bg-dark text-white">first_name: {{ student.first_name }}</h2>
+            <h4 class="text-left"><img src="../assets/paint-board-and-brush.png"> Last_name:{{ student.last_name }}</h4>
+            <p class="text-left"><img src="../assets/add-documents.png" alt=""> Email: {{ student.email }}</p>
+            <p>Birthday: {{ student.birthday }}</p>
+            <b>Faculty: {{ student.faculty.name }}</b>
+            <!-- <a
               v-for="film in person.films"
               :key="film.id"
               :href="film"
               class="d-flex justify-content-around text-column"
               ><h5 class="text-dark">click</h5></a
-            >
+            > -->
           </div>
         </b-col>
       </b-row>
@@ -129,10 +131,11 @@
 export default {
   // get, post,put,patch,delete,
   methods: {
-    getPeople() {
-      this.$http.get("people/")
+    getStudent() {
+      this.$http.get("students/")
         .then((result) => {
-          this.$store.dispatch("getPeople", result.data.results);
+          console.log(result)
+          this.$store.dispatch("getStudent", result.data);
         })
         .catch((error) => {
           console.log(error);
@@ -188,7 +191,7 @@ export default {
     // }
   },
   mounted() {
-    this.getPeople();
+    this.getStudent();
     // this.getPlanets();
     // this.getFilms();
     // this.getSpecies();

@@ -16,7 +16,9 @@ Vue.use(IconsPlugin)
 Vue.config.productionTip = false;
 
 Vue.prototype.$http = axios;
-axios.defaults.baseURL = 'https://swapi.dev/api/'
+axios.defaults.baseURL = 'http://54.237.240.244/api/'
+
+
 
 new Vue({
   router,

@@ -5,20 +5,20 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    people: [],
-    //   planets: [],
+    students: [],
+      // planets: [],
     //   films: [],
     //   species: [],
     //   starships: [],
     //   vehicles: [],
   },
     getters: {
-      people(state) {
-        return state.people
+      student(state) {
+        return state.students
       },
-      // planets(state) {
-      //   return state.planets
-      // },
+    //  planets(state){
+    //    return state.planets
+    //  }
       // films(state) {
       //   return state.films
       // },
@@ -34,12 +34,12 @@ export default new Vuex.Store({
 
     },
     mutations: {
-      SET_PEOPLE(state, payload) {
-        state.people = payload
+      SET_STUDENTS(state, payload) {
+        state.students = payload
       },
-      // SET_PLANETS(state, payload) {
+      // SET_PLANETS(state, payload){
       //   state.planets = payload
-      // },
+      // }
       // SET_FILMS(state, payload) {
       //   state.films = payload
       // },
@@ -55,12 +55,12 @@ export default new Vuex.Store({
 
     },
     actions: {
-      getPeople({ commit }, payload) {
-        commit('SET_PEOPLE', payload)
+      getStudents({ commit }, payload) {
+        commit('SET_STUDENTS', payload)
       },
-      // getPlanets({ commit }, payload) {
-      //   commit('SET_PLANETS', payload)
-      // },
+      // getPlanets({commit},payload){
+      //   commit('SET_PLANETS',payload)
+      // }
       // getFilms({ commit }, payload) {
       //   commit('SET_FILMS', payload)
       // },

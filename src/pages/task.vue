@@ -33,6 +33,8 @@
                     <b-modal :id="`my-edit-modal-${student.id}`" title="BootstrapVue">
                     <p class="my-4">Hello from edit modal {{ student.id }}!</p>
                     </b-modal>    
+
+                    
                     <b-button v-b-modal="`my-delete-modal-${student.id}`" type="button">
                       <img src="../assets/trash.png"
                     /></b-button>

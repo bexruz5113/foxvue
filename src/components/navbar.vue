@@ -100,7 +100,7 @@
             <div> <router-link to="/single" class="router-link"
                 >Single</router-link
               ></div>
-              <div> <router-link to="/single" class="router-link"
+              <div> <router-link to="/task" class="router-link"
                 >New task</router-link
               ></div>
           </div>

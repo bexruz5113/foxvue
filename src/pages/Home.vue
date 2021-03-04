@@ -38,7 +38,7 @@
     <sectionFeature />
     <sectionWatch />
     <!-- <section-props title="lorem larem" :color="colors" /> -->
-    <!-- <section-props title="prop malumot" :color="clours"  /> -->
+    <!-- <section-props title = "prop malumot" :color="clours"  /> -->
     <section-client />
     <section-fact />
     <section-price />

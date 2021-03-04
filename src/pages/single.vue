@@ -162,7 +162,8 @@
                 <b-col cols="12">
                   <b-row>
                     <b-col cols="12" md="6"
-                      ><div class="borderBottom float-md-left">
+                      >
+                      <div class="borderBottom float-md-left">
                         <input
                           type="text"
                           v-model="obj.name"

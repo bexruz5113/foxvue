@@ -28,7 +28,10 @@
         <b-row>
           <b-col cols="12" lg="3">
             <div class="d-block py-3">
-              <div class="pt-4 pb-5 ml-lg-5">
+              <div class="pt-4 pb-5 ml-lg-5"
+              data-aos="fade-right"  
+      data-aos-delay="300" 
+      data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
                   <div><h6 class="font-weight-bold mt-2">Lorem, ipsum</h6></div>
                   <div><img src="../assets/pen.png" width="40px" alt="" /></div>
@@ -37,7 +40,10 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="pt-4 pb-5 mr-lg-5">
+              <div class="pt-4 pb-5 mr-lg-5"
+              data-aos="fade-right"  
+      data-aos-delay="300" 
+      data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
                   <div><h6 class="font-weight-bold mt-2">Lorem, ipsum</h6></div>
                   <div><img src="../assets/pen.png" width="40px" alt="" /></div>
@@ -46,7 +52,10 @@
                   Lorem ipsum dolor sit amet lorem consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="pt-4 pb-5 ml-lg-5">
+              <div class="pt-4 pb-5 ml-lg-5"
+              data-aos="fade-right"  
+      data-aos-delay="300" 
+      data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
                   <div><h6 class="font-weight-bold mt-2">Lorem, ipsum</h6></div>
                   <div><img src="../assets/pen.png" width="40px" alt="" /></div>
@@ -59,17 +68,26 @@
           </b-col>
 
           <b-col cols="12" lg="6" class="position-relative">
+          <div
+          data-aos="zoom-in"  
+      data-aos-delay="250" 
+      data-aos-duration="3000"
+          >
             <div class="circle__spin ml-lg-0">
               <svg class="position-relative">
                 <circle cx="50%" cy="50%" r="280px"></circle>
               </svg>
             </div>
                <img class="ImgAbsolute m-auto" src="../assets/mobile-3.png" alt="" />
+          </div>
           </b-col>
 
           <b-col cols="12" lg="3" class="mt-lg-0 mt-5">
             <div class="d-block py-3">
-              <div class="pt-4 pb-5 mr-lg-5">
+              <div class="pt-4 pb-5 mr-lg-5" 
+              data-aos="fade-left"  
+      data-aos-delay="200" 
+      data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
                   <div><h6 class="font-weight-bold mt-2">Lorem, ipsum</h6></div>
                   <div><img src="../assets/pen.png" width="40px" alt="" /></div>
@@ -78,7 +96,10 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="pt-4 pb-5 ml-lg-5">
+              <div class="pt-4 pb-5 ml-lg-5"
+              data-aos="fade-left"  
+      data-aos-delay="250" 
+      data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
                   <div><h6 class="font-weight-bold mt-2">Lorem, ipsum</h6></div>
                   <div><img src="../assets/pen.png" width="40px" alt="" /></div>
@@ -87,7 +108,10 @@
                   Lorem ipsum dolor sit amet lorem consectetur adipisicing elit.
                 </p>
               </div>
-              <div class="pt-4 pb-5 mr-lg-5">
+              <div class="pt-4 pb-5 mr-lg-5"
+              data-aos="fade-left"  
+      data-aos-delay="300" 
+      data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
                   <div><h6 class="font-weight-bold mt-2">Lorem, ipsum</h6></div>
                   <div><img src="../assets/pen.png" width="40px" alt="" /></div>

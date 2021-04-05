@@ -1,16 +1,24 @@
 <template>
   <div class="container">
     <div class="boxs">
-        <!-- <h1>{{ title }}</h1> -->
-        <div class="box" v-for="(base,index) in bases" v-bind:key="index">
-        <p class="bottomLine"></p>
-        <span class="spanAbsolute"> 
-        <img v-bind:src="require(`@/assets/${base.picture}.png`)" alt="rasm"></span>
-        <h2>{{base.name}}</h2>
-        <p>{{base.text}}</p>
+      <!-- <h1>{{ title }}</h1> -->
+      <div class="box" v-for="(base, index) in bases" v-bind:key="index" 
+          :data-aos="`${base.aos}`"
+          data-aos-delay="300"
+          data-aos-duration="2000">
+        
+        
+          <p class="bottomLine"></p>
+          <span class="spanAbsolute">
+            <img
+              v-bind:src="require(`@/assets/${base.picture}.png`)"
+              alt="rasm"
+          /></span>
+          <h2>{{ base.name }}</h2>
+          <p>{{ base.text }}</p>
         </div>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -18,18 +26,16 @@ export default {
   props: {
     title: {
       type: [String, Number, Boolean, Array, Object],
-      default: 'My name is Behruz'
+      default: "My name is Behruz",
     },
     bases: {
       type: Array,
       required: true,
-    }
+    },
   },
   data() {
-    return {
-      
-    };
-  }
+    return {};
+  },
 };
 </script>
 
@@ -54,14 +60,14 @@ export default {
   color: white;
   position: relative;
 
-h2{
-margin-top: 20px;
-}
+  h2 {
+    margin-top: 20px;
+  }
 
-    p{
-        width: 100%;
-        margin-top: 15px;
-    }
+  p {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 .bottomLine {
   width: 100%;
@@ -70,18 +76,16 @@ margin-top: 20px;
   background-color: yellow;
   position: absolute;
   left: 0;
-  bottom:-4px;
+  bottom: -4px;
   transform: scale(0);
   transition: all 0.5s ease;
 }
-.box:hover .bottomLine{
-transform: scale(1);
-
+.box:hover .bottomLine {
+  transform: scale(1);
 }
-.box:hover .spanAbsolute{
-border: 4px solid yellow;
-transform: scale(1.05);
-
+.box:hover .spanAbsolute {
+  border: 4px solid yellow;
+  transform: scale(1.05);
 }
 
 .spanAbsolute {
@@ -95,9 +99,8 @@ transform: scale(1.05);
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
-  img{
+  img {
     width: 50%;
-   
   }
 }
 
@@ -108,14 +111,10 @@ transform: scale(1.05);
   .box {
     width: 90%;
     margin: 50px auto;
-   
 
-    .spanAbsolute{
-        margin: 0 auto;
-
-  
-  }
+    .spanAbsolute {
+      margin: 0 auto;
+    }
   }
 }
-
 </style>

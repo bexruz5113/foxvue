@@ -4,9 +4,12 @@
       <b-container>
         <b-row>
           <b-col cols="12" lg="5">
-            <img class="mobileImg" src="../assets/mobile-2.png" alt="" />
+          <div data-aos="fade-right" data-aos-delay="300"  data-aos-duration="2000">
+            <img class="mobileImg" src="../assets/mobile-2.png" />
+            </div>
           </b-col>
           <b-col cols="12" lg="7">
+          <div data-aos="fade-left"         data-aos-delay="300"  data-aos-duration="2000">
             <b-col col="12" class="pt-4">
               <h1>Make Business Easy With Us</h1>
               <p class="w-100 text-justify">
@@ -15,6 +18,7 @@
                 excepturi sit.
               </p>
             </b-col>
+
    <b-col cols="12" class="d-flex">
    <b-row>
         <b-col class="my-3" cols="12" lg="6" v-for="(list,index) in lists" v-bind:key="index">
@@ -23,6 +27,7 @@
         </b-col>
       </b-row>
       </b-col>
+      </div>
           </b-col>
         </b-row>
       </b-container>

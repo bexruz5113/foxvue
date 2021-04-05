@@ -10,6 +10,10 @@
             </p>    
   </b-col>
 <b-col cols="12" md="4" class="my-3 windows d-block">
+<div data-aos="fade-right"  
+      data-aos-delay="300" 
+      data-aos-duration="3000"
+>
         <div class="bgImage py-2">
         <h3 class="text-primary">Personal</h3>
        <div class="d-flex justify-content-center align-items-center"> <sub>$</sub><h1 class="font-weight-bold text-primary">30</h1></div>
@@ -30,9 +34,13 @@
 
             <button type="button" class="button">Choose Plan</button>
         </div>
+        </div>
 </b-col>
 <b-col cols="12" md="4" class="my-3 windowsOffer d-block">
-<div class="windowsOffer"><div class="offer">OFFER</div>
+<div class="windowsOffer" data-aos="zoom-in"  
+      data-aos-delay="250" 
+      data-aos-duration="3000"
+><div class="offer">OFFER</div>
         <div class="bgImage py-2">
         <h3 class="text-primary">Business</h3>
        <div class="d-flex justify-content-center align-items-center"> <sub>$</sub><h1 class="font-weight-bold text-primary">50</h1></div>
@@ -55,6 +63,9 @@
         </div></div>
 </b-col>
 <b-col cols="12" md="4" class="my-3 windows d-block">
+<div data-aos="fade-left"  
+      data-aos-delay="300" 
+      data-aos-duration="3000">
         <div class="bgImage py-2">
         <h3 class="text-primary">Interprise</h3>
        <div class="d-flex justify-content-center align-items-center"> <sub>$</sub><h1 class="font-weight-bold text-primary">80</h1></div>
@@ -74,6 +85,7 @@
 
 
             <button type="button" class="button">Choose Plan</button>
+        </div>
         </div>
 </b-col>
 </b-row>

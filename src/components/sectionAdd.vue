@@ -43,8 +43,8 @@
           <b-col cols="12" sm="6" class="mt-2 mb-3">
             <div>
               <select v-model="form.gender">
-                <option value="MALE">MALE</option>
-                <option value="FEMALE">FEMALE</option>
+                <option value="1">MALE</option>
+                <option value="2">FEMALE</option>
               </select>
             </div></b-col
           >
@@ -83,11 +83,12 @@ export default {
   },
   methods: {
     addStudents() {
-      this.$http
-        .post("students/", this.form)
+      this.$http.
+      post("students/", this.form)
         .then((result) => {
           console.log(result);
           this.$bvModal.hide("my-modal-add");
+
           this.form = {
             first_name: "",
             last_name: "",
@@ -101,7 +102,7 @@ export default {
         .catch((error) => {
           console.log(error);
         });
-        this.$emit("clicked")
+        // this.$emit("clicked")
     },
   },
 };

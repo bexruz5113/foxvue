@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <b-col cols="12">
-          <div class="float-right bg-primary rounded">
+          <div class="float-right bgPrimary rounded border">
             <b-button class="text-white" v-b-modal.my-modal-add type="button">
               + Add
             </b-button>
@@ -12,7 +12,7 @@
             </b-modal>
           </div>
           <div class="table-responsive">
-            <table class="table">
+            <table class="table"> 
               <thead>
                 <tr>
                   <th scope="col">N_</th>
@@ -42,8 +42,7 @@
                       :id="`my-edit-modal-${student.id}`"
                       centered
                       hide-footer
-                      title="Edit Section"
-                    >
+                      title="Edit Section">
                       <form v-on:submit.prevent="saveStudent(student.id)">
                         <b-col cols="12">
                           <b-row>
@@ -107,17 +106,16 @@
                                 Send Message
                               </button>
                             </b-col>
-                          </b-row></b-col
-                        >
+                          </b-row></b-col>
                       </form>
                     </b-modal>
 
-                    <b-button
-                      v-b-modal.modal-center="`my-delete-modal-${student.id}`"
+                    <b-button v-b-modal.modal-center="`my-delete-modal-${student.id}`"
                       type="button"
                     >
                       <img src="../assets/trash.png"
                     /></b-button>
+                    
                     <b-modal
                       class="modal"
                       :id="`my-delete-modal-${student.id}`"
@@ -199,9 +197,8 @@ export default {
       this.$bvModal.hide(`my-edit-modal-${id}`);
     },
     getStudents() {
-      this.$http
-        .get("students/")
-        .then((result) => {
+      this.$http.get("students/")
+      .then((result) => {
           console.log(result);
           this.$store.dispatch("getStudents", result.data);
         })
@@ -234,6 +231,9 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.bgPrimary{
+  background-color: #21bbd3;
 }
 button {
   outline: none;

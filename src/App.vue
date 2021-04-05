@@ -7,7 +7,7 @@
     <router-view></router-view>
     <section-footer />
   </div>
-</template>
+</template> 
 <script>
 import Navbar from "./components/navbar.vue";
 import SectionFooter from "./components/sectionFooter.vue";

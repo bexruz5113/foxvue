@@ -1,7 +1,12 @@
 <template>
+  <div>
   <div class="home pt-3 mt-5">
     <div class="NextSection">
-      <div class="left">
+      <div class="left"
+       data-aos="fade-right"  
+      data-aos-delay="300" 
+      data-aos-duration="3000"
+      >
         <p>With us you will</p>
         <h1>SUCCEED</h1>
         <p>
@@ -12,7 +17,7 @@
           <button class="button-weather" type="button">READ MORE</button>
         </div>
       </div>
-      <div class="right">
+      <div class="right" data-aos="fade-left"  data-aos-delay="300" data-aos-duration="3000">
         <img class="image-weather" src="../assets/mobile-1.png" />
       </div>
     </div>
@@ -47,6 +52,7 @@
     <section-news />
     <section-download />
     <section-touch />
+  </div>
   </div>
 </template>
 
@@ -119,18 +125,21 @@ export default {
         {
           picture: "pen",
           name: "Creative Design",
+          aos:"fade-right",
           text:
             "Proactively syndicate open-source e-markets after low-risk high-yield synergy.",
         },
         {
           picture: "shuttle",
           name: "Free support",
+          aos:"zoom-in",
           text:
             "Proactively syndicate open-source e-markets after low-risk high-yield synergy.",
         },
         {
           picture: "present",
           name: "Exclusive Design",
+          aos:"fade-left",
           text:
             "Proactively syndicate open-source e-markets after low-risk high-yield synergy.",
         },

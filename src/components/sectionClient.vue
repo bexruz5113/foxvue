@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container>
+    <b-container class="mx-auto d-md-block d-none">
       <b-row>
         <b-col cols="12">
           <b class="strong">Clients <b class="text-primary"> Testimonial</b></b>
@@ -12,7 +12,7 @@
         </b-col>
       </b-row>
     </b-container>
-    <b-container>
+    <b-container  class="mx-auto d-md-block d-none">
     <b-row>
       <b-col cols="12" lg="12">
     <swiper class="swiper" :options="swiperOption">

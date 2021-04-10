@@ -29,7 +29,7 @@
           <b-col cols="12" lg="3">
             <div class="d-block py-3">
               <div class="pt-4 pb-5 ml-lg-5"
-              data-aos="fade-right"  
+              data-aos="zoom-in"  
       data-aos-delay="300" 
       data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
@@ -41,7 +41,7 @@
                 </p>
               </div>
               <div class="pt-4 pb-5 mr-lg-5"
-              data-aos="fade-right"  
+              data-aos="zoom-in"  
       data-aos-delay="300" 
       data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
@@ -53,7 +53,7 @@
                 </p>
               </div>
               <div class="pt-4 pb-5 ml-lg-5"
-              data-aos="fade-right"  
+              data-aos="zoom-in"  
       data-aos-delay="300" 
       data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
@@ -85,7 +85,7 @@
           <b-col cols="12" lg="3" class="mt-lg-0 mt-5">
             <div class="d-block py-3">
               <div class="pt-4 pb-5 mr-lg-5" 
-              data-aos="fade-left"  
+              data-aos="zoom-in"  
       data-aos-delay="200" 
       data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
@@ -97,7 +97,7 @@
                 </p>
               </div>
               <div class="pt-4 pb-5 ml-lg-5"
-              data-aos="fade-left"  
+              data-aos="zoom-in"  
       data-aos-delay="250" 
       data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">
@@ -109,7 +109,7 @@
                 </p>
               </div>
               <div class="pt-4 pb-5 mr-lg-5"
-              data-aos="fade-left"  
+              data-aos="zoom-in"  
       data-aos-delay="300" 
       data-aos-duration="3000">
                 <div class="d-flex justify-content-lg-end justify-content-center">

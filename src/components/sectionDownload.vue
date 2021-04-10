@@ -9,12 +9,12 @@
 <b-col cols="12" class="d-flex justify-content-center">
 <b-row>
 <b-col cols="12" sm="6">
-<button class="button d-flex justify-content-around">
+<button class="downloadButton d-flex justify-content-around">
 <div><img src="../assets/apple.png" width="40" alt=""></div> 
 <div><small class="float-left">Git it on</small><br> <h6>APP STORE</h6></div>
 </button></b-col>
 <b-col cols="12" sm="6">
-<button class="button d-flex justify-content-around">
+<button class="downloadButton d-flex justify-content-around">
 <div><img src="../assets/play-store.png" width="40" alt=""></div>
 <div><small class="float-left">Git it on</small><br><h6>GOOGLE PLAY</h6></div>
 </button></b-col>
@@ -50,9 +50,10 @@ background-attachment: fixed;
   width: 100%;
   max-width: 350px;
 }
-.button {
+.downloadButton {
   width: 200px;
-  padding: 15px 20px;
+  margin: 5px auto;
+  padding: 10px;
   background-color: #21bbd3;
   border: 1px solid white;
   outline: none;
@@ -60,7 +61,7 @@ background-attachment: fixed;
   border-radius: 40px;
   transition: all 0.5s ease;
 }
-.button:hover {
+.downloadButton:hover {
   background-color: gold;
 }
 

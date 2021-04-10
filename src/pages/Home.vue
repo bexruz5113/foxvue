@@ -3,9 +3,9 @@
   <div class="home pt-3 mt-5">
     <div class="NextSection">
       <div class="left"
-       data-aos="fade-right"  
+       data-aos="zoom-in"  
       data-aos-delay="300" 
-      data-aos-duration="3000"
+      data-aos-duration="2000"
       >
         <p>With us you will</p>
         <h1>SUCCEED</h1>
@@ -17,8 +17,11 @@
           <button class="button-weather" type="button">READ MORE</button>
         </div>
       </div>
-      <div class="right" data-aos="fade-left"  data-aos-delay="300" data-aos-duration="3000">
-        <img class="image-weather" src="../assets/mobile-1.png" />
+      <div class="right"
+       data-aos="fade-left"
+       data-aos-delay="300" 
+       data-aos-duration="2000">
+        <img class="image-weather ml-5" src="../assets/mobile-1.png" />
       </div>
     </div>
 
@@ -125,7 +128,7 @@ export default {
         {
           picture: "pen",
           name: "Creative Design",
-          aos:"fade-right",
+          aos:"zoom-in",
           text:
             "Proactively syndicate open-source e-markets after low-risk high-yield synergy.",
         },
@@ -139,7 +142,7 @@ export default {
         {
           picture: "present",
           name: "Exclusive Design",
-          aos:"fade-left",
+          aos:"zoom-in",
           text:
             "Proactively syndicate open-source e-markets after low-risk high-yield synergy.",
         },

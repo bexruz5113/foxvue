@@ -17,25 +17,25 @@
     <p class="text-white w-100 text-left">Sed pottitor lects nibh. Viamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet.</p>
     </b-col>
     <b-col cols="12" lg="3" md="6" class="d-block">
-    <div class="mt-4"><h3 class="text-white">Quick Links</h3></div>
-    <div class="mb-3 mt-4 text-left ml-5"><router-link to="/home" class="text-white" >Home</router-link></div>
-    <div class="my-3 text-left ml-5"><router-link to="/about" class="text-white" >About Us</router-link></div>
-    <div class="my-3 text-left ml-5"><router-link to="/course" class="text-white" >Services</router-link></div>
-    <div class="my-3 text-left ml-5"><router-link to="/back" class="text-white" >Products</router-link></div>
+    <div class="mt-4"><h3 class="text-white text-left">Quick Links</h3></div>
+    <div class="mb-3 mt-4 text-left ml-md-5 ml-0"><router-link to="/home" class="text-white" >Home</router-link></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><router-link to="/about" class="text-white" >About Us</router-link></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><router-link to="/course" class="text-white" >Services</router-link></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><router-link to="/back" class="text-white" >Products</router-link></div>
     </b-col>
     <b-col cols="12" lg="3" md="6" class="d-block">
-    <div class="mt-4"><h3 class="text-white">Social Media</h3></div>
-    <div class="mb-3 mt-4 text-left ml-5"><a class="text-white" href="#">Facebook</a></div>
-    <div class="my-3 text-left ml-5"><a class="text-white" href="#">Instagram</a></div>
-    <div class="my-3 text-left ml-5"><a class="text-white" href="#">Linkedln</a></div>
-    <div class="my-3 text-left ml-5"><a class="text-white" href="#">Twitter</a></div>
+    <div class="mt-4"><h3 class="text-white text-left">Social Media</h3></div>
+    <div class="mb-3 mt-4 text-left ml-md-5 ml-0"><a class="text-white" href="#">Facebook</a></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><a class="text-white" href="#">Instagram</a></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><a class="text-white" href="#">Linkedln</a></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><a class="text-white" href="#">Twitter</a></div>
     </b-col>
     <b-col cols="12" lg="3" md="6" class="d-block">
-    <div class="mt-4"><h3 class="text-white">Quick Contact</h3></div>
-    <div class="mb-3 mt-4 text-left ml-5"><small class="w-100 text-white">Phone : +2 012 345 6789</small></div>
-    <div class="my-3 text-left ml-5"><small class="w-100 text-white">Email : info@yourcompany.com</small></div>
-    <div class="my-3 text-left ml-5"><small class="w-100 text-white">Address : 8 Green Tower, Street</small></div>
-    <div class="my-3 text-left ml-5"><small class="w-100 text-white">Name New York City, USA</small></div>
+    <div class="mt-4"><h3 class="text-white text-left">Quick Contact</h3></div>
+    <div class="mb-3 mt-4 text-left ml-md-5 ml-0"><small class="w-100 text-white">Phone : +2 012 345 6789</small></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><small class="w-100 text-white">Email : info@yourcompany.com</small></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><small class="w-100 text-white">Address : 8 Green Tower, Street</small></div>
+    <div class="my-3 text-left ml-md-5 ml-0"><small class="w-100 text-white">Name New York City, USA</small></div>
     </b-col>
     <b-container  fluid class="bgcolor">
     <b-container class="container1">

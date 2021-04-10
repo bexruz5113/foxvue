@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container>
+    <b-container class="mx-auto">
       <b-row>
         <b-col cols="12">
           <b class="strong"> Git <b class="text-primary">in</b> touch</b>

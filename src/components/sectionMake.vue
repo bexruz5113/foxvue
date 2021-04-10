@@ -4,12 +4,12 @@
       <b-container>
         <b-row>
           <b-col cols="12" lg="5">
-          <div data-aos="fade-right" data-aos-delay="300"  data-aos-duration="2000">
+          <div>
             <img class="mobileImg" src="../assets/mobile-2.png" />
             </div>
           </b-col>
           <b-col cols="12" lg="7">
-          <div data-aos="fade-left"         data-aos-delay="300"  data-aos-duration="2000">
+          <div>
             <b-col col="12" class="pt-4">
               <h1>Make Business Easy With Us</h1>
               <p class="w-100 text-justify">

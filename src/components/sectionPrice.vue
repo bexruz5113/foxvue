@@ -10,7 +10,7 @@
             </p>    
   </b-col>
 <b-col cols="12" md="4" class="my-3 windows d-block">
-<div data-aos="fade-right"  
+<div data-aos="zoom-in"  
       data-aos-delay="300" 
       data-aos-duration="3000"
 >
@@ -63,7 +63,7 @@
         </div></div>
 </b-col>
 <b-col cols="12" md="4" class="my-3 windows d-block">
-<div data-aos="fade-left"  
+<div data-aos="zoom-in"  
       data-aos-delay="300" 
       data-aos-duration="3000">
         <div class="bgImage py-2">

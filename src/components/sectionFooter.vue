@@ -3,11 +3,11 @@
     <b-container fluid class="bgImage py-5">
     <b-container>
     <b-row>
-    <b-col cols="12" class="w-100 p-3 my-5 bg-white rounded-pill border">
-        <b-row class="d-flex justify-content-center">
+    <b-col cols="12" class="d-flex justify-content-center">
+        <b-row class="w-100 my-5 d-flex flex-row justify-content-around">
     
-            <b-col cols="12" md="9"><input class="mx-auto mb-md-0 mb-3"  type="text" placeholder="Enter Your Email"></b-col>
-            <b-col cols="12" md="3"><button class="mx-auto" type="submit">Subscribe</button></b-col>
+            <b-col cols="7" sm="8" md="9"><input class="w-100 mx-auto bg-white border-0 mb-md-0 mb-3"  type="text" placeholder="Enter Your Email"></b-col>
+            <b-col cols="5" sm="4" md="3"><button class="w-100 mx-auto border-0 px-2" type="submit">Subscribe</button></b-col>
    
         </b-row>
     </b-col>

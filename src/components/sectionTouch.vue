@@ -16,6 +16,7 @@
                 ><div class="borderBottom float-md-left">
                   <input
                     type="text"
+                    class="w-100"
                     v-model="obj.name"
                     required
                     placeholder="Enter Your Name"
@@ -25,6 +26,7 @@
                 ><div class="borderBottom">
                   <input
                     type="text"
+                    class="w-100"
                     v-model="obj.email"
                     required
                     placeholder="Enter Your Email"
@@ -34,6 +36,7 @@
                 ><div class="borderBottom float-md-right">
                   <input
                     type="text"
+                    class="w-100"
                     v-model="obj.subject"
                     required
                     placeholder="Enter Your Subject"
@@ -45,6 +48,7 @@
                     required
                     v-model="obj.message"
                     placeholder="Enter Your Message"
+                    class="mb-0 mt-5"
                   ></textarea></div
               ></b-col>
               <b-col cols="12"
@@ -118,12 +122,10 @@ input {
 .borderBottom {
   width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
   border-bottom: 2px solid #21bbd3;
 }
 .borderBottomText {
   width: 100%;
-  padding: 20px 0;
   border-bottom: 2px solid #21bbd3;
 }
 .button {

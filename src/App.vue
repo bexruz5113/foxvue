@@ -72,7 +72,7 @@ body {
   left: 0;
   top: 85px;
   padding: 10px;
-  background-color: #1da0b5;
+  background-color: #007bff;
   z-index: 9999999;
 }
 .settingImg {
@@ -93,7 +93,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #1da0b5;
+    background: #007bff;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -102,7 +102,7 @@ body {
     &:hover {
       cursor: pointer;
       transition: .2s;
-      box-shadow: 1px 0px 10px 0px #1da0b5;
+      box-shadow: 1px 0px 10px 0px #007bff;
     }
     svg {
       width: 100%;
@@ -120,7 +120,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #1da0b5;
+    background: #007bff;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -129,7 +129,7 @@ body {
     &:hover {
       cursor: pointer;
       transition: .2s;
-      box-shadow: 1px 0px 20px 0px #1da0b5;
+      box-shadow: 1px 0px 20px 0px #007bff;
     }
     svg {
       position: absolute;

@@ -72,7 +72,7 @@ body {
   left: 0;
   top: 85px;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #21bbd3;
   z-index: 9999999;
 }
 .settingImg {
@@ -93,7 +93,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #007bff;
+    background: #21bbd3;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -102,7 +102,7 @@ body {
     &:hover {
       cursor: pointer;
       transition: .2s;
-      box-shadow: 1px 0px 10px 0px #007bff;
+      box-shadow: 1px 0px 10px 0px #21bbd3;
     }
     svg {
       width: 100%;
@@ -120,7 +120,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #007bff;
+    background: #21bbd3;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -129,7 +129,7 @@ body {
     &:hover {
       cursor: pointer;
       transition: .2s;
-      box-shadow: 1px 0px 20px 0px #007bff;
+      box-shadow: 1px 0px 20px 0px #21bbd3;
     }
     svg {
       position: absolute;
@@ -162,5 +162,24 @@ body {
         bottom: -50px;
         opacity: 0;
     }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #21bbd3; 
+
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  height: 60px;
+  border-radius: 15px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #218394; 
 }
 </style>

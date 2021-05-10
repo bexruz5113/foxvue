@@ -112,7 +112,7 @@ export default {
       y:0,
       style:{
         transform:'translate(0,0)',
-        transition:'all ease .8s'
+        transition:'all ease 1s'
       },
       colors: ["dark", "warning", "danger", "primary"],
       clours: ["primary", "danger", "warning", "dark"],
@@ -166,16 +166,16 @@ export default {
       this.x = $event.clientX
       this.y = $event.clientY
       if(this.x < 683 && this.y < 320){
-        this.style.transform = 'translate(-20px,-20px)'
-      }
-      if(this.x > 683 && this.y > 320){
         this.style.transform = 'translate(20px,20px)'
       }
+      if(this.x > 683 && this.y > 320){
+        this.style.transform = 'translate(-20px,-20px)'
+      }
       if(this.x < 683 && this.y > 320){
-        this.style.transform = 'translate(-20px,20px)'
+        this.style.transform = 'translate(20px,-20px)'
       }
       if(this.x > 683 && this.y < 320){
-        this.style.transform = 'translate(20px,-20px)'
+        this.style.transform = 'translate(-20px,20px)'
       }
     }
   }
@@ -265,7 +265,7 @@ p {
 }
 .right {
   width: 50%;
-  padding: 100px;
+  
   position: relative;
 }
 .image-weather {

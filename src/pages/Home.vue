@@ -1,7 +1,7 @@
 <template>
   <div>
   <div class="home pt-3 mt-5">
-    <div @mousemove="showEvent($event)">
+    <div class="overflow-hidden" @mousemove="showEvent($event)">
     <div class="NextSection">
       <div class="left"
        data-aos="zoom-in"  

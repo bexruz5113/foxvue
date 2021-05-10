@@ -1,6 +1,7 @@
 <template>
   <div>
   <div class="home pt-3 mt-5">
+    <div @mousemove="showEvent($event)">
     <div class="NextSection">
       <div class="left"
        data-aos="zoom-in"  
@@ -17,7 +18,9 @@
           <button class="button-weather" type="button">READ MORE</button>
         </div>
       </div>
-      <div class="right"
+      <div 
+      :style="style"
+      class="right"
        data-aos="fade-left"
        data-aos-delay="300" 
        data-aos-duration="2000">
@@ -25,7 +28,7 @@
       </div>
     </div>
 
-    <svg
+   <div> <svg
       class="green"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
@@ -36,6 +39,9 @@
         d="M0,288L1440,64L1440,0L0,0Z"
       ></path>
     </svg>
+  </div>
+  </div>
+
     <!-- <HelloWorld /> -->
     <!-- <router-view /> -->
 
@@ -102,6 +108,12 @@ export default {
   },
   data() {
     return {
+      x:0,
+      y:0,
+      style:{
+        transform:'translate(0,0)',
+        transition:'all ease .8s'
+      },
       colors: ["dark", "warning", "danger", "primary"],
       clours: ["primary", "danger", "warning", "dark"],
       basesTwo: [
@@ -149,6 +161,24 @@ export default {
       ],
     };
   },
+  methods:{
+    showEvent($event){
+      this.x = $event.clientX
+      this.y = $event.clientY
+      if(this.x < 683 && this.y < 320){
+        this.style.transform = 'translate(-20px,-20px)'
+      }
+      if(this.x > 683 && this.y > 320){
+        this.style.transform = 'translate(20px,20px)'
+      }
+      if(this.x < 683 && this.y > 320){
+        this.style.transform = 'translate(-20px,20px)'
+      }
+      if(this.x > 683 && this.y < 320){
+        this.style.transform = 'translate(20px,-20px)'
+      }
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

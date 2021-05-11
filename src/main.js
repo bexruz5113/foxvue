@@ -11,10 +11,16 @@ import 'swiper/css/swiper.css';
 import axios from 'axios';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import VueKinesis from 'vue-kinesis'
+
+
+
 
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueKinesis)
+
 Vue.config.productionTip = false;
 
 Vue.prototype.$http = axios;

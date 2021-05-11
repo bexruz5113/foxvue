@@ -1,6 +1,7 @@
 <template>
     <div>
 <b-container fluid="100%" class="bgColor">
+  <kinesis-container>
 <b-container>
 <b-row>
 <b-col cols="12" md="6" class="mt-5 pt-5">
@@ -22,9 +23,14 @@
 </b-col>
 
 </b-col>
-<b-col cols="12" md="6"><img class="imageSize" src="../assets/mobile-2.png" alt=""></b-col>
+<b-col cols="12" md="6">
+  <kinesis-element :strength="40">
+  <img class="imageSize" src="../assets/mobile-2.png" alt="">
+  </kinesis-element>
+  </b-col>
 </b-row>
 </b-container>
+</kinesis-container>
 </b-container>
     </div>
 </template>

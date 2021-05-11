@@ -2,6 +2,7 @@
   <div>
   <div class="home pt-3 mt-5">
     <div class="overflow-hidden" @mousemove="showEvent($event)">
+      <kinesis-container>
     <div class="NextSection">
       <div class="left"
        data-aos="zoom-in"  
@@ -24,7 +25,9 @@
        data-aos="fade-left"
        data-aos-delay="300" 
        data-aos-duration="2000">
+       <kinesis-element :strength="40">
         <img class="image-weather ml-5" src="../assets/mobile-1.png" />
+        </kinesis-element>
       </div>
     </div>
 
@@ -40,6 +43,7 @@
       ></path>
     </svg>
   </div>
+  </kinesis-container>
   </div>
 
     <!-- <HelloWorld /> -->
@@ -110,7 +114,7 @@ export default {
     return {
       x:0,
       y:0,
-      style:{
+      stile:{
         transform:'translate(0,0)',
         transition:'all ease 1s'
       },
@@ -211,8 +215,9 @@ body {
         width: 100%;
       }
       .right {
-        width: 50%;
-        padding: 50px;
+        width: 100%;
+        max-width: 100px;
+        padding: 70px;
         margin: 0 auto;
         position: relative;
       }
@@ -265,7 +270,6 @@ p {
 }
 .right {
   width: 50%;
-  
   position: relative;
 }
 .image-weather {

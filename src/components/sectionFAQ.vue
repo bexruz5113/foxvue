@@ -1,5 +1,7 @@
 <template>
   <div id="sectionFAQ">
+    <b-container fluid>
+      <kinesis-container>
     <b-container>
       <b-row>
         <b-col cols="12">
@@ -81,9 +83,11 @@
             </b-card>
           </div>
         </b-col>
-        <b-col cols="12" md="5"
-          ><img class="imageSize" src="../assets/mobile-1.png" alt=""
-        /></b-col>
+        <b-col cols="12" md="5">
+          <kinesis-element :strength="40">
+          <img class="imageSize" src="../assets/mobile-1.png"/>
+        </kinesis-element>
+        </b-col>
       </b-row>
     </b-container>
     <b-container fluid="100%" class="bgColor py-1 my-3">
@@ -105,6 +109,8 @@
     </b-col>
     </b-row>
     </b-container>
+    </b-container>
+      </kinesis-container>
     </b-container>
   </div>
 </template>

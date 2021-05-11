@@ -1,11 +1,14 @@
 <template>
   <div id="sectionPage">
     <b-container fluid="100%" class="bgImg">
+      <kinesis-container>
       <b-container>
         <b-row>
           <b-col cols="12" lg="5">
           <div>
+           <kinesis-element :strength="40">
             <img class="mobileImg" src="../assets/mobile-2.png" />
+           </kinesis-element>
             </div>
           </b-col>
           <b-col cols="12" lg="7">
@@ -24,13 +27,28 @@
         <b-col class="my-3" cols="12" lg="6" v-for="(list,index) in lists" v-bind:key="index">
         <div class="w-100 text-left"><img v-bind:src="require(`@/assets/${list.image}.png`)" width="45px"></div>
         <p class="w-100 text-justify">{{list.text}}</p>
-        </b-col>
+       </b-col>
       </b-row>
       </b-col>
       </div>
           </b-col>
         </b-row>
       </b-container>
+      <!--<b-col cols="12">
+            <kinesis-container>
+              Here, you can put
+              <kinesis-element :strength="10">
+                whatever
+              </kinesis-element>
+              <kinesis-element :strength="20">
+                content!
+              </kinesis-element>
+              <kinesis-element :strength="40" :type="translate">
+                <img src="../assets/mobile-1.png" alt="">
+              </kinesis-element>
+          </kinesis-container>
+          </b-col>-->
+      </kinesis-container>
     </b-container>
   </div>
 </template>

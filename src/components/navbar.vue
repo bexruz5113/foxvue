@@ -1,14 +1,14 @@
 <template>
   <div id="sectionNavbar">
-    <div class="navbar py-lg-4 py-2" v-on:scroll="scroll">
+    <div class="navbar py-lg-4 py-2"
+      :class="{ navbaronscroll: scroll }"
+    >
       <div class="site-left">
         <img src="../assets/fox-logo.png" alt="" />
       </div>
       <div class="site-right">
         <div>
           <button class="button" @click="toggle">☰</button>
-
-          <!-- <button type="button"><img src="../assets/menu.png" width="50px" alt=""></button> -->
         </div>
         <ul class="my-1">
           <li>
@@ -74,7 +74,7 @@
         </ul>
       </div>
     </div>
-
+<!--  -->
     <div class="sideMenu" v-if="open">
       <div><button v-on:click="close" class="close">&times;</button></div>
       <div class="link1"><router-link to="/">home</router-link></div>
@@ -107,19 +107,32 @@
         </div>
       </div>
     </div>
-  </div>
+<!--  -->
+ </div>
 </template>
 <script>
 export default {
   data() {
     return {
+      showModal: false,
+      windowTop: 0,
+      scroll: false,
       open: false,
-
       addSiteBar: {
         sitebar: false,
       },
     };
   },
+mounted() {
+    window.addEventListener("scroll", this.onScroll);
+    this.removeclass();
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
+//   created() {
+//     window.addEventListener('scroll', this.onScroll);
+//   },
   methods: {
     toggle() {
       this.open = !this.open;
@@ -127,22 +140,37 @@ export default {
     close() {
       this.open = false;
     },
-
-    scroll() {
-      var elnavbar = document.querySelector("navbar");
-      document.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-          elnavbar.classList.add("navbar-show");
-        } else {
-          elnavbar.classList.remove("navbar-show");
-        }
-      });
-    },
-  },
+    onScroll(e) {
+      console.log(e);
+      this.windowTop = e.target.documentElement.scrollTop;
+      if (this.windowTop > 300) {
+        this.scroll = true;
+      } else {
+        this.scroll = false;
+      }
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+
+.navbaronscroll{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111111;
+animation: upper 2s forwards;  
+}
+@keyframes upper {
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+  
+}
 a {
   text-decoration: none;
   color: white;
@@ -151,10 +179,6 @@ a {
 .navbar {
   width: 100%;
   display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
   background: #21bbd3;
   justify-content: space-between;
 }
@@ -206,7 +230,6 @@ a {
 .drop-down-div:hover {
   background-color: #21bbd3;
 }
-
 .navbar-show {
   position: fixed;
   top: 0;
@@ -224,7 +247,6 @@ a {
     opacity: 1;
   }
 }
-
 .site-left {
   margin-left: 60px;
 }
@@ -261,7 +283,6 @@ a {
   margin: 20px 0;
   text-decoration: none;
 }
-
 @media screen and (max-width: 992px) {
   ul {
     display: none !important;
@@ -326,7 +347,6 @@ ul li {
   transform: scale(0);
   transition: all 0.5s ease;
 }
-
 ul li:hover .bottomLine {
   transform: scale(1);
 }
@@ -335,4 +355,6 @@ ul li a {
   text-decoration: none;
   font-size: 22px;
 }
+
+
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div>
-  <div class="home pt-3 mt-5">
+    <navbar />
+  <div class="home">
     <div class="overflow-hidden" @mousemove="showEvent($event)">
       <kinesis-container>
     <div class="NextSection">
@@ -9,12 +10,14 @@
       data-aos-delay="300" 
       data-aos-duration="2000"
       >
-        <p>With us you will</p>
-        <h1>SUCCEED</h1>
+        <kinesis-element :strength="10">
+          <p>With us you will</p></kinesis-element>
+        <kinesis-element :strength="20"><h1>SUCCEED</h1></kinesis-element>
+        <kinesis-element :strength="30">
         <p>
           Proactively syndicate open-source e-markets after low-risk high-yield
           synergy. Professionally simplify visionary technology.
-        </p>
+        </p></kinesis-element>
         <div class="relativeBtn">
           <button class="button-weather" type="button">READ MORE</button>
         </div>
@@ -25,7 +28,7 @@
        data-aos="fade-left"
        data-aos-delay="300" 
        data-aos-duration="2000">
-       <kinesis-element :strength="40">
+       <kinesis-element :strength="30">
         <img class="image-weather ml-5" src="../assets/mobile-1.png" />
         </kinesis-element>
       </div>
@@ -65,6 +68,7 @@
     <section-news />
     <section-download />
     <section-touch />
+    <section-footer />
   </div>
   </div>
 </template>
@@ -72,6 +76,7 @@
 <script>
 // @ is an alias to /src
 // import StarWars from './components/StarWars';
+import navbar from '../components/navbar'
 import Section1 from "../components/section1.vue";
 import SectionMake from "../components/sectionMake.vue";
 import SectionMain from "../components/sectionMain.vue";
@@ -87,11 +92,13 @@ import SectionFAQ from "../components/sectionFAQ.vue";
 import SectionNews from "../components/sectionNews.vue";
 import SectionDownload from "../components/sectionDownload.vue";
 import SectionTouch from "../components/sectionTouch.vue";
+import SectionFooter from '../components/sectionFooter.vue';
 // import SectionMap from '../components/sectionMap.vue';
 
 export default {
   name: "Home",
   components: {
+    navbar,
     Section1,
     SectionMake,
     SectionMain,
@@ -108,13 +115,14 @@ export default {
     SectionNews,
     SectionDownload,
     SectionTouch,
+    SectionFooter,
     // SectionMap,
   },
   data() {
     return {
       x:0,
       y:0,
-      stile:{
+      style:{
         transform:'translate(0,0)',
         transition:'all ease 1s'
       },

@@ -63,8 +63,8 @@ p {
   width: 70px;
   height: 70px;
   position: absolute;
-  top: 26px;
-  left: 28px;
+  top: 27px;
+  left: 37px;
   animation: scale 4s infinite;
 }
 @keyframes scale {

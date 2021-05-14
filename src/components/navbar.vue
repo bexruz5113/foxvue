@@ -123,16 +123,6 @@ export default {
       },
     };
   },
-mounted() {
-    window.addEventListener("scroll", this.onScroll);
-    this.removeclass();
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.onScroll);
-  },
-//   created() {
-//     window.addEventListener('scroll', this.onScroll);
-//   },
   methods: {
     toggle() {
       this.open = !this.open;
@@ -149,7 +139,14 @@ mounted() {
         this.scroll = false;
       }
     }
-  }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+    this.removeclass();
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
 };
 </script>
 

@@ -23,7 +23,6 @@
         </div>
       </div>
       <div 
-      :style="style"
       class="right"
        data-aos="fade-left"
        data-aos-delay="300" 

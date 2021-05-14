@@ -23,8 +23,12 @@
             <div class="windows d-block">
             <img class="pb-3" width="45" :src="require(`@/assets/${list.image}.png`)">
             <h1 class="textPrimary font-weight-bolder">
-   <animated-number :value="list.Number" :formatValue="formatToPrice" :duration="3000" />
-</h1>
+            <animated-number 
+             :value="list.Number" 
+             :formatValue="formatToPrice" 
+             :duration="3000" 
+             />
+            </h1>
             <p class="mx-auto textPrimary font-weight-bold ">{{ list.title }}</p>
             </div>
           </b-col>
